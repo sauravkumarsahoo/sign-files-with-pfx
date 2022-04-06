@@ -1,4 +1,4 @@
-name: 'Code sign a file with pfx certificate - clicksrv edition'
+name: 'Sign files with pfx'
 description: 'Sign a file with a pfx certificate. Some more changes over the existing version by danabear'
 branding:
   icon: 'award'
