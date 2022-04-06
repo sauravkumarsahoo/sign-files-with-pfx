@@ -1,0 +1,31 @@
+name: 'Code sign a file with pfx certificate - clicksrv edition'
+description: 'Sign a file with a pfx certificate. Some more changes over the existing version by danabear'
+branding:
+  icon: 'award'
+  color: 'green'
+inputs:
+  certificate:
+    description: 'The base64 encoded certificate.'
+    required: true
+  folder:
+    description: 'The folder that contains the files to sign.'
+    required: true
+  recursive:
+    description: 'Recursively search for supported files.'
+    required: false
+  password:
+    description: 'The password'
+    required: false
+  certificatesha1:
+    description: 'The sha1 or fingerprint of the certification'
+    required: false
+  certificatename:
+    description: 'The Name of the certificate'
+    required: false
+  timestampUrl:
+    description: 'URL of the timestamp server'
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
