@@ -39,7 +39,7 @@ This action signs files that are supported by `signtool.exe` with a code signing
 ```
 runs-on: windows-latest
 steps:
-  uses: DanaBear/code-sign-action@v4
+  uses: sauravkumarsahoo/sign-files-with-pfx@v1
   with:
     certificate: '${{ secrets.CERTIFICATE }}'
     password: '${{ secrets.PASSWORD }}'
